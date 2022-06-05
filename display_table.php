@@ -15,7 +15,7 @@
 
     $result = mysqli_query($conn, "select * from user");
     while($row = sqli_fetch_row($result)){
-        echo "<tr>"
+        echo "<tr>";
         foreach ($row as $cell)
             echo "<td>$cell</td>";
         echo "</tr>";
