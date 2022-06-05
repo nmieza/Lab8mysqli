@@ -14,7 +14,7 @@
     echo "<th>E-mail</th><th>Password</th><th>Registration Date</th></tr>";
 
     $result = mysqli_query($conn, "select * from user");
-    while($row = sqli_fetch_row($result)){
+    while($row = mysqli_fetch_row($result)){
         echo "<tr>";
         foreach ($row as $cell)
             echo "<td>$cell</td>";
